@@ -35,7 +35,7 @@ String.prototype.capitalizeHeadline = function() {
     return result.join(" ").capitalize()
 }
 
-// Removes all spaces from the beginning and end of a String along with any extra spaces in the middle
+// Removes all spaces from the beginning and end of a string along with any extra spaces in the middle
 String.prototype.removeExtraSpaces = function() {
     result = []
     this.trim().split(" ").forEach(word => {
