@@ -1,0 +1,22 @@
+{
+  "name": "anstrilib",
+  "version": "1.0.0",
+  "description": "A javascript string library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anisha7/anstrilib.git"
+  },
+  "author": "Anisha Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anisha7/anstrilib/issues"
+  },
+  "homepage": "https://github.com/Anisha7/anstrilib#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
