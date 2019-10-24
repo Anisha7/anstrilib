@@ -22,24 +22,24 @@ Capitalizes the first character of each word, in a space separated string
 Capitalizes the first character of each headline word, in a space separated string.
 Headline words exclude the, in, a, an, and, but, for, at, by, from (unless its the first word).
 
-`"hello the from but boo".capitalizeHeadline() // "Hello the from but Boo"`
+`"hello from boo".capitalizeHeadline() // "Hello from Boo"`
 
 #### removeExtraSpaces()
 Removes all spaces from the beginning and end of a string along with any extra spaces in the middle
 
-`"  hello the   a  ".removeExtraSpaces() // "hello the a"`
+`"  hello from   boo  ".removeExtraSpaces() // "hello from boo"`
 
 #### kabobCase()
 Removes extra spaces and replaces spaces with the hyphen "-", and makes all characters lowercase.
 
-`" hello the From but  Boo".kabobCase() // "hello-the-from-but-boo"`
+`" hello  From the  Boo".kabobCase() // "hello-from-the-boo"`
 
 #### snakeCase()
 Removes extra space and replaces spaces with an underscore "_", and makes all characters lowercase.
 
-`" hello the From but  Boo".kabobCase() // "hello_the_from_but_boo"`
+`" hello   From the  Boo".kabobCase() // "hello_from_the_boo"`
 
 #### camelCase()
 Lowercases the first character of the first word, uppercases the first character of all other words, and removes all spaces.
 
-``" hello the From but  Boo".kabobCase() // "helloTheFromButBoo"``
+``" hello  From the  boo".kabobCase() // "helloTheFromButBoo"``
