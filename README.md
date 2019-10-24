@@ -1,4 +1,7 @@
 # anstrilib
+
+![npm](https://img.shields.io/npm/v/anstrilib)
+
  A javascript string library
 
 ## How to use:
