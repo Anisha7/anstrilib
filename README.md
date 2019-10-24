@@ -1,6 +1,6 @@
 # anstrilib
 
-![npm](https://img.shields.io/npm/v/anstrilib)
+![npm](https://img.shields.io/npm/v/anstrilib) ![GitHub repo size](https://img.shields.io/github/repo-size/anisha7/anstrilib?style=plastic) ![GitHub last commit](https://img.shields.io/github/last-commit/anisha7/anstrilib?style=plastic) ![GitHub top language](https://img.shields.io/github/languages/top/anisha7/anstrilib) ![GitHub issues](https://img.shields.io/github/issues-raw/anisha7/anstrilib) ![GitHub followers](https://img.shields.io/github/followers/anisha7?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/anisha7/anstrilib?style=social)
 
  A javascript string library
 
