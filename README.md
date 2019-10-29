@@ -46,3 +46,29 @@ Removes extra space and replaces spaces with an underscore "_", and makes all ch
 Lowercases the first character of the first word, uppercases the first character of all other words, and removes all spaces.
 
 ``" hello  From the  boo".kabobCase() // "helloTheFromButBoo"``
+
+## Test Coverage:
+
+```npx jest --coverage```
+
+ PASS  ./test.js
+  ✓ capitalize (4ms)
+  ✓ allCaps (1ms)
+  ✓ capitalizeWords
+  ✓ capitalizeHeadline (2ms)
+  ✓ removeExtraSpaces
+  ✓ kabobCase (1ms)
+  ✓ snakeCase
+  ✓ camelCase (1ms)
+
+----------|----------|----------|----------|----------|-------------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |      100 |      100 |      100 |      100 |                   |
+ index.js |      100 |      100 |      100 |      100 |                   |
+----------|----------|----------|----------|----------|-------------------|
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        2.132s
+Ran all test suites.
