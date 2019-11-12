@@ -2,10 +2,12 @@
   "name": "anstrilib",
   "version": "1.0.2",
   "description": "A javascript string library",
-  "main": "index.js",
+  "main": "umd/anstrilib.js",
+  "module": "esm/index.js",
   "scripts": {
     "test": "jest",
-    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "prepare": "rollup --config"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,11 @@
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "jest": "^24.9.0"
-  }
+    "jest": "^24.9.0",
+    "rollup-plugin-terser": "^5.1.2"
+  },
+  "files": [
+    "esm/*",
+    "emd/*"
+  ]
 }
