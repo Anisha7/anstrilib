@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1572382660794" clover="3.2.0">
-  <project timestamp="1572382660794" name="All files">
+<coverage generated="1573600281251" clover="3.2.0">
+  <project timestamp="1573600281251" name="All files">
     <metrics statements="31" coveredstatements="31" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11" elements="46" coveredelements="46" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/Users/anisha/Documents/GitHub/anstrilib/index.js">
       <metrics statements="31" coveredstatements="31" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="26" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="3" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="15" count="5" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="26" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
       <line num="16" count="5" type="stmt"/>
-      <line num="17" count="14" type="stmt"/>
-      <line num="19" count="5" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
-      <line num="25" count="3" type="stmt"/>
+      <line num="17" count="5" type="stmt"/>
+      <line num="18" count="14" type="stmt"/>
+      <line num="20" count="5" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
       <line num="26" count="3" type="stmt"/>
       <line num="27" count="3" type="stmt"/>
-      <line num="28" count="12" type="cond" truecount="2" falsecount="0"/>
-      <line num="29" count="6" type="stmt"/>
-      <line num="31" count="6" type="stmt"/>
-      <line num="35" count="3" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
-      <line num="40" count="8" type="stmt"/>
+      <line num="28" count="3" type="stmt"/>
+      <line num="29" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="30" count="6" type="stmt"/>
+      <line num="32" count="6" type="stmt"/>
+      <line num="36" count="3" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
       <line num="41" count="8" type="stmt"/>
-      <line num="42" count="39" type="cond" truecount="2" falsecount="0"/>
-      <line num="43" count="32" type="stmt"/>
-      <line num="46" count="8" type="stmt"/>
-      <line num="51" count="1" type="stmt"/>
-      <line num="52" count="2" type="stmt"/>
-      <line num="57" count="1" type="stmt"/>
-      <line num="58" count="2" type="stmt"/>
-      <line num="64" count="1" type="stmt"/>
-      <line num="65" count="2" type="stmt"/>
-      <line num="66" count="2" type="stmt"/>
+      <line num="42" count="8" type="stmt"/>
+      <line num="43" count="39" type="cond" truecount="2" falsecount="0"/>
+      <line num="44" count="32" type="stmt"/>
+      <line num="47" count="8" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="53" count="2" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="60" count="2" type="stmt"/>
+      <line num="66" count="1" type="stmt"/>
       <line num="67" count="2" type="stmt"/>
+      <line num="68" count="2" type="stmt"/>
+      <line num="69" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>

@@ -113,7 +113,11 @@
 <a name='L65'></a><a href='#L65'>65</a>
 <a name='L66'></a><a href='#L66'>66</a>
 <a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -169,91 +173,96 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable no-extend-native */
+&nbsp;
 // Capitalizes the first letter of the string.
 // TODO: If first letter is a space, this won't capitalize the next one.
-String.prototype.capitalize = function() {
-    return this.charAt(0).toUpperCase() + this.substr(1)
- }
- 
+String.prototype.capitalize = function () {
+  return this.charAt(0).toUpperCase() + this.substr(1);
+};
+&nbsp;
 // Capitalizes all letters of the string.
-String.prototype.allCaps = function() {
-    return this.toUpperCase()
-}
+String.prototype.allCaps = function () {
+  return this.toUpperCase();
+};
 &nbsp;
 // Capitalizes the first character of each word, in a space separated string
-String.prototype.capitalizeWords = function() {
-    result = []
-    this.split(" ").forEach(word =&gt; {
-        result.push(word.capitalize())
-    });
-    return result.join(" ")
-}
+String.prototype.capitalizeWords = function () {
+  const result = [];
+  this.split(' ').forEach((word) =&gt; {
+    result.push(word.capitalize());
+  });
+  return result.join(' ');
+};
 &nbsp;
 // Capitalizes the first character of each headline word, in a space separated string
 // Headline words exclude the, in, a, an, and, but, for, at, by, from (unless its the first word)
-String.prototype.capitalizeHeadline = function() {
-    result = []
-    exceptions = new Set(["the", "a", "an", "and", "but", "for", "at", "by", "from", "in"])
-    this.split(" ").forEach(word =&gt; {
-        if (!exceptions.has(word)) {
-            result.push(word.capitalize())
-        } else {
-            result.push(word)
-        }
-    });
-    // Ensure the first word is always capitalized
-    return result.join(" ").capitalize()
-}
+String.prototype.capitalizeHeadline = function () {
+  const result = [];
+  const exceptions = new Set(['the', 'a', 'an', 'and', 'but', 'for', 'at', 'by', 'from', 'in']);
+  this.split(' ').forEach((word) =&gt; {
+    if (!exceptions.has(word)) {
+      result.push(word.capitalize());
+    } else {
+      result.push(word);
+    }
+  });
+  // Ensure the first word is always capitalized
+  return result.join(' ').capitalize();
+};
 &nbsp;
 // Removes all spaces from the beginning and end of a string along with any extra spaces in the middle
-String.prototype.removeExtraSpaces = function() {
-    result = []
-    this.trim().split(" ").forEach(word =&gt; {
-        if (word.length &gt; 0) {
-            result.push(word.trim())
-        }
-    });
-    return result.join(" ")
-}
+String.prototype.removeExtraSpaces = function () {
+  const result = [];
+  this.trim().split(' ').forEach((word) =&gt; {
+    if (word.length &gt; 0) {
+      result.push(word.trim());
+    }
+  });
+  return result.join(' ');
+};
 &nbsp;
 // Removes extra spaces and replaces spaces with the hyphen "-", and makes all characters lowercase.
 // " Hello world " -&gt; "hello-world"
-String.prototype.kabobCase = function() {
-    return this.removeExtraSpaces().toLowerCase().split(" ").join("-")
-}
+String.prototype.kabobCase = function () {
+  return this.removeExtraSpaces().toLowerCase().split(' ').join('-');
+};
 &nbsp;
-// Removes extra space and replaces spaces with an underscore "_", and makes all characters lowercase.
+// Removes extra space and replaces spaces with an underscore "_",
+// and makes all characters lowercase.
 // " what the heck " -&gt; "what_the_heck"
-String.prototype.snakeCase = function() {
-    return this.removeExtraSpaces().toLowerCase().split(" ").join("_")
-}
+String.prototype.snakeCase = function () {
+  return this.removeExtraSpaces().toLowerCase().split(' ').join('_');
+};
 &nbsp;
-// Lowercases the first character of the first word. 
+// Lowercases the first character of the first word.
 // Uppercases the first character of all other words, and removes all spaces.
 // Camel Case -&gt; camelCase
-String.prototype.camelCase = function() {
-    let tempWordList = this.removeExtraSpaces().capitalizeWords().split(" ")
-    tempWordList[0] =  tempWordList[0].toLowerCase()
-    return tempWordList.join("")
-}</pre></td></tr>
+String.prototype.camelCase = function () {
+  const tempWordList = this.removeExtraSpaces().capitalizeWords().split(' ');
+  tempWordList[0] = tempWordList[0].toLowerCase();
+  return tempWordList.join('');
+};
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 29 2019 13:57:40 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Nov 12 2019 15:11:21 GMT-0800 (PST)
 </div>
 </div>
 <script src="prettify.js"></script>
