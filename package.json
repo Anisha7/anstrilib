@@ -1,6 +1,6 @@
 {
   "name": "anstrilib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A javascript string library",
   "main": "umd/anstrilib.js",
   "module": "esm/index.js",
