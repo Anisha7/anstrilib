@@ -1,5 +1,7 @@
 /* eslint-disable no-undef */
 require('./index.js');
+// require('./umd/anstrilib');
+// require('./esm/index.js');
 
 test('capitalize', () => {
   expect('hello'.capitalize()).toBe('Hello');
